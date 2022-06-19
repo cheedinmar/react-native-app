@@ -39,7 +39,9 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
 					style={{
 						backgroundColor: '#7F18D0',
                         width: "100%",
-                        borderRadius: 5
+                        borderRadius: 5,
+						height:50,
+						justifyContent:'center'
 					}}
 					onPress={() =>{navigation.navigate('Investment')} }
 				>

@@ -16,8 +16,6 @@ const linking: LinkingOptions<RootStackParamList> = {
       Home: {
        
       },
-     
-      Modal: 'modal',
       NotFound: '*',
     },
   },

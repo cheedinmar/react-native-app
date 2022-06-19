@@ -16,7 +16,7 @@
    Home: undefined;
    Investment: undefined;  
    Cards: { order: string };
-   OrderRequest: { order: string };
+   NotFound: undefined
  };
  
  export type RootStackScreenProps<Screen extends keyof RootStackParamList> =

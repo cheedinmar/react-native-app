@@ -14,11 +14,29 @@ import Svg, {
 
 export const Eclipse = function(){
 	return (
-		<Svg width="58" height="63" viewBox="0 0 58 63" fill="none" >
-<Circle opacity="0.4" cx="50" cy="50" r="50" fill="white"/>
-</Svg>
-
-	)
+    <Svg
+      width="61"
+      height="67"
+      viewBox="0 0 61 67"
+      fill="none"
+    >
+      <Circle opacity="0.4" cx="11" cy="17" r="50" fill="white" />
+      <Circle cx="11" cy="17" r="30" fill="#7F18D0" />
+    </Svg>
+  );
+}
+export const Eclipse2 = function(){
+	return (
+    <Svg
+      width="58"
+      height="63"
+      viewBox="0 0 58 63"
+      fill="none"
+    >
+      <Circle opacity="0.4" cx="50" cy="50" r="50" fill="white" />
+      <Circle cx="50" cy="50" r="30" fill="#7F18D0" />
+    </Svg>
+  );
 }
 
 export const Coins = function () {
@@ -3904,3 +3922,19 @@ export const Coins = function () {
 		</Svg>
 	);
 };
+
+export const BackButton = function (){
+	return (
+    <Svg
+      width="10"
+      height="16"
+      viewBox="0 0 10 16"
+      fill="none"
+    >
+      <Path
+        d="M9.2541 0.241064C9.55216 0.533264 9.57926 0.990508 9.33539 1.31272L9.2541 1.40503L2.52658 8L9.2541 14.595C9.55216 14.8872 9.57926 15.3444 9.33539 15.6666L9.2541 15.7589C8.95604 16.0511 8.48963 16.0777 8.16096 15.8386L8.06679 15.7589L0.745899 8.58198C0.44784 8.28978 0.420743 7.83254 0.66461 7.51033L0.745899 7.41802L8.06679 0.241064C8.39466 -0.0803548 8.92624 -0.0803548 9.2541 0.241064Z"
+        fill="#7F18D0"
+      />
+    </Svg>
+  );
+}
