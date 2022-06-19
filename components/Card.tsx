@@ -1,12 +1,12 @@
-import { StyleSheet, Pressable, Image } from 'react-native';
+import { StyleSheet, Pressable, Image, TouchableOpacity } from "react-native";
 import { Eclipse, Eclipse2 } from "../assets/svgs/svg";
 import { Text, View } from '../components/Themed';
 
 interface IProps{
-	title:string;
+	title:string
 	amount:string
 }
-export default function Card(props: IProps) {
+export default function Card(props: IProps,) {
   return (
     <View style={styles.container}>
       <View style={{ backgroundColor: "#7F18D0", position: "absolute" }}>
@@ -16,11 +16,61 @@ export default function Card(props: IProps) {
         style={{
           backgroundColor: "transparent",
           alignItems: "center",
-		  display:'flex'
+          display: "flex",
+          justifyContent: "center",
+          marginTop: 20,
         }}
       >
-        <Text style={styles.header}>{props.title}</Text>
-        <Text style={styles.amount}>{props.amount}</Text>
+        <Text style={styles.header}>{props.amount}</Text>
+        <Text style={styles.amount}>{props.title}</Text>
+        <View
+          style={{
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-between",
+            backgroundColor: "transparent",
+          }}
+        >
+          <TouchableOpacity
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: 5,
+              justifyContent: "center",
+              marginRight: 20,
+            }}
+          >
+            <Text
+              style={{
+                color: "#4B4B4B",
+                alignSelf: "center",
+                padding: 10,
+                fontFamily: "Mulish_700Bold",
+                fontSize: 16,
+              }}
+            >
+              Add Money
+            </Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={{
+              backgroundColor: "#fff",
+              borderRadius: 5,
+              justifyContent: "center",
+            }}
+          >
+            <Text
+              style={{
+                color: "#4B4B4B",
+                alignSelf: "center",
+                padding: 10,
+                fontFamily: "Mulish_700Bold",
+                fontSize: 16,
+              }}
+            >
+              withdraw
+            </Text>
+          </TouchableOpacity>
+        </View>
       </View>
       <View
         style={{
@@ -28,7 +78,6 @@ export default function Card(props: IProps) {
           position: "absolute",
           bottom: 0,
           right: 0,
-
         }}
       >
         <Eclipse2 />
@@ -39,11 +88,11 @@ export default function Card(props: IProps) {
 
 const styles = StyleSheet.create({
 	container: {
-		height: 173,
+		height: 190,
 		width: 326,
 		backgroundColor: '#7F18D0',
 		borderRadius: 6,
-		marginBottom: 17,
+		zIndex:100
 	},
 	header: {
 		fontSize: 40,
@@ -53,9 +102,10 @@ const styles = StyleSheet.create({
 	},
 
 	amount: {
-		fontFamily: 'Mulish_400Regular',
-		color: '#98D4F9',
+		fontFamily: 'Mulish_600SemiBold',
+		color: '#fff',
 		paddingTop: 5,
-		fontSize: 13,
+		fontSize: 16,
+		marginBottom:19
 	},
 });

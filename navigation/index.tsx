@@ -21,7 +21,7 @@ import NotFoundScreen from '../screens/NotFoundScreen';
 import LinkingConfiguration from './LinkingConfiguration';
 import Home from '../screens/Home';
 import Investment from '../screens/Investment';
-
+import Portfolio from '../screens/PortFolio'
 const MyTheme = {
 	...DefaultTheme,
 	colors: {
@@ -58,31 +58,32 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 function RootNavigator() {
 	return (
-		<Stack.Navigator
-			screenOptions={{
-				headerTintColor: 'green',
-				headerStyle: { backgroundColor: 'white' },
-                headerShown: false
-			}}
-		>
-			<Stack.Screen
-				name="Home"
-				component={Home}
-				options={{ title: '' }}
-			/>
-				<Stack.Screen
-				name="Investment"
-				component={Investment}
-				options={{ title: '' }}
-			/>
+    <Stack.Navigator
+      screenOptions={{
+        headerTintColor: "green",
+        headerStyle: { backgroundColor: "white" },
+        headerShown: false,
+      }}
+    >
+      <Stack.Screen name="Home" component={Home} options={{ title: "" }} />
+      <Stack.Screen
+        name="Investment"
+        component={Investment}
+        options={{ title: "" }}
+      />
+      <Stack.Screen
+        name="Portfolio"
+        component={Portfolio}
+        options={{ title: "" }}
+      />
 
-			<Stack.Screen
-				name="NotFound"
-				component={NotFoundScreen}
-				options={{ title: 'Oops!' }}
-			/>
-		</Stack.Navigator>
-	);
+      <Stack.Screen
+        name="NotFound"
+        component={NotFoundScreen}
+        options={{ title: "Oops!" }}
+      />
+    </Stack.Navigator>
+  );
 }
 
 /**

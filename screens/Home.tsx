@@ -1,7 +1,5 @@
-import { Pressable, StyleSheet, TouchableOpacity } from 'react-native';
+import { Pressable, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Coins } from '../assets/svgs/svg';
-
 import { Text, View } from '../components/Themed';
 import { RootStackScreenProps } from '../types';
 
@@ -15,7 +13,7 @@ export default function Home({ navigation }: RootStackScreenProps<'Home'>) {
 	return (
 		<SafeAreaView style={{ flex: 1 }}>
 			<View style={styles.container}>
-				<Coins />
+				<Image source={require('../assets/images/coin.png')}/>
 				<Text style={styles.text}>
 					3KLE invests your money intelligently in stocks
 				</Text>

@@ -14,9 +14,10 @@
  
  export type RootStackParamList = {
    Home: undefined;
-   Investment: undefined;  
+   Investment: undefined;
    Cards: { order: string };
-   NotFound: undefined
+   NotFound: undefined;
+   Portfolio:undefined
  };
  
  export type RootStackScreenProps<Screen extends keyof RootStackParamList> =

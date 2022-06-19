@@ -16,6 +16,7 @@ const linking: LinkingOptions<RootStackParamList> = {
       Home: {
        
       },
+      Portfolio:{},
       NotFound: '*',
     },
   },
