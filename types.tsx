@@ -13,14 +13,8 @@
  }
  
  export type RootStackParamList = {
-   Intro: undefined;
-   RequestModal: undefined;
-   Modal: undefined;
-   NotFound: undefined;
-   OrderDetails: { order: object };
-   Main: undefined;
-   OTP: { phone_number: string };
-   Login: undefined;
+   Home: undefined;
+   Investment: undefined;  
    Cards: { order: string };
    OrderRequest: { order: string };
  };
